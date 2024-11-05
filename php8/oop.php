@@ -22,4 +22,6 @@ class compact extends car{//child class
 $car1 = new compact();
 $car1->setModel("Toyota");
 echo $car1->getModel();
+$car1->setSeat("5");
+echo $car1->getSeat();
 ?>
