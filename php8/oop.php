@@ -22,7 +22,7 @@ class compact extends car{//child class
 class mpv extends car{//child class
     private $minSeat=0;
     private $maxSeat=0;
-    public function setMinSeat($min,$max){
+    public function setSeat($min,$max){
         $this->minSeat = $min;
         $this->maxSeat = $max;
     };
