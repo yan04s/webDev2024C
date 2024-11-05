@@ -37,8 +37,9 @@ echo $car1->getModel();
 $car1->setSeat(5);
 echo $car1->getSeat();
 
-$car2 = new compact;
+$car2 = new mpv;
 $car2->setModel("Honda");
 echo $car2->getModel();
-
+$car2->setSeat(5,7);
+echo $car2->getSeat();
 ?>
