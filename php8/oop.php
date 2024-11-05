@@ -18,4 +18,8 @@ class compact extends car{//child class
         return "Number of seats is ".$this->seat."<br>";
     };
 }
+
+$car1 = new compact();
+$car1->setModel("Toyota");
+echo $car1->getModel();
 ?>
