@@ -1,6 +1,6 @@
 <?php
 class car{//parent class
-    public $model;
+    public $model="";
     public function setModel($newVal){
         $this->model = $newVal;
     }
@@ -10,7 +10,7 @@ class car{//parent class
 }
 
 class compact extends car{//child class
-    private $seat="0";
+    private $seat=0;
     public function setSeat($newVal){
         $this->seat = $newVal;
     };
@@ -22,6 +22,6 @@ class compact extends car{//child class
 $car1 = new compact;
 $car1->setModel("Toyota");
 echo $car1->getModel();
-$car1->setSeat("5");
+$car1->setSeat(5);
 echo $car1->getSeat();
 ?>
