@@ -19,6 +19,18 @@ class compact extends car{//child class
     };
 };
 
+class mpv extends car{//child class
+    private $minSeat=0;
+    private $maxSeat=0;
+    public function setMinSeat($min,$max){
+        $this->minSeat = $min;
+        $this->maxSeat = $max;
+    };
+    public function getSeat(){
+        return "Number of seats is between ".$this->minSeat." and ".$this->maxSeat."<br>";
+    };
+};
+
 $car1 = new compact;
 $car1->setModel("Toyota");
 echo $car1->getModel();
