@@ -3,20 +3,20 @@ class car{//parent class
     public $model="";
     public function setModel($newVal){
         $this->model = $newVal;
-    };
+    }
     public function getModel(){
         return "The model is ".$this->model."<br>";
-    };
+    }
 };
 
 class compact extends car{//child class
     private $seat=0;
     public function setSeat($newVal){
         $this->seat = $newVal;
-    };
+    }
     public function getSeat(){
         return "Number of seats is ".$this->seat."<br>";
-    };
+    }
 };
 
 class mpv extends car{//child class
@@ -25,10 +25,10 @@ class mpv extends car{//child class
     public function setSeat($min,$max){
         $this->minSeat = $min;
         $this->maxSeat = $max;
-    };
+    }
     public function getSeat(){
         return "Number of seats is between ".$this->minSeat." and ".$this->maxSeat."<br>";
-    };
+    }
 };
 
 $car1 = new compact;
