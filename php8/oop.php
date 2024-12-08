@@ -40,6 +40,6 @@ echo $car1->getSeat();
 $car2 = new mpv();
 $car2->setModel("Honda");
 echo $car2->getModel();
-$car2->setSeat(5);
+$car2->setSeat(5,7);
 echo $car2->getSeat();
 ?>
